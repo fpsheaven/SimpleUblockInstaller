@@ -1,0 +1,11 @@
+[package]
+name = "fpsheaven_ublock_installer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+eframe = "0.33"
+
+[build-dependencies]
+winresource = "0.1"
