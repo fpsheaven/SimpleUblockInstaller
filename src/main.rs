@@ -247,7 +247,7 @@ impl eframe::App for InstallerApp {
 
             ui.add_space(12.0);
             ui.horizontal(|ui| {
-                let total = 130.0 + 8.0 + 150.0;
+                let total = 160.0 + 8.0 + 150.0;
                 ui.add_space(((ui.available_width() - total) * 0.5).max(0.0));
                 ui.scope(|ui| {
                     // Small link-style buttons.
@@ -264,10 +264,10 @@ impl eframe::App for InstallerApp {
                     w.hovered.expansion = 0.0;
                     w.active.expansion = 0.0;
 
-                    let ubo = egui::Button::new(egui::RichText::new("uBlock Origin").size(12.5))
-                        .min_size(egui::vec2(130.0, 32.0));
+                    let ubo = egui::Button::new(egui::RichText::new("uBlock Origin Lite").size(12.5))
+                        .min_size(egui::vec2(160.0, 32.0));
                     if ui.add(ubo).clicked() {
-                        open_url("https://github.com/gorhill/uBlock");
+                        open_url("https://github.com/uBlockOrigin/uBOL-home");
                     }
 
                     ui.add_space(8.0);
